@@ -1,0 +1,6 @@
+You have to guess the correct number from the given range as mentioned.
+
+If you guess the correct number, You win.
+And if you are not able to guess, don't be sad we give you as many as more opportunities to guess the correct
+number but along with the result we are going to mention the number of guesses.
+And for helping you, we also provide the hints.
