@@ -18,7 +18,14 @@ def guessNumber(n, guess):
     
     print(f"Congrats!! You guess the number in the {guess_count} time.")
 
-    
+    with open("highScore.txt") as f:
+        hiScore = f.read()
+    with open("highScore.txt",'w') as f:
+        if hiScore == "":
+            f.write(str(guess_count))
+        elif guess_count<int(hiScore):
+            print("You broke the high score !!")
+            f.write(str(guess_count))
 
 
 print("******** Lets play The_Perfect_Guess game ********")
